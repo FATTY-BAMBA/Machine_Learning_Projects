@@ -1,2 +1,0 @@
-
-Grid Search Method is a technique use for optimizing model hyperparameters of our machine learning algorithms. In this project the grip search method is used to optimize the hyperparameters of a SVM model. 
