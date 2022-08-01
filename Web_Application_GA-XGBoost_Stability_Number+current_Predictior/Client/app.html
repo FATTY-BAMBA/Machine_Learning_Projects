@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Slope Safety Assesment Under Earthquake Effect</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  <!--jquery for http calls-->
+    <script src="app.js"></script>  <!--import app.js file-->
+     <link rel="stylesheet" href="app.css">  <!--import app.css file-->
+</head>
+
+<body>
+<div class="img"></div>
+<h1>Slope Safety Assesment Under Earthquake Influence</h1>
+<form class="form">
+    <div>
+    <h2> Disturbance Factor (D)</h2>
+    <input class="D" type="text" id="uiD" class="floatLabel" name="D" value="0.0">
+
+    <h2>Geological Strength Index (GSI)</h2>
+    <input class="GSI" type="text" id="uiGSI" class="floatLabel" name="GSI" value="10.0">
+
+    <h2>Intact Rock Mass (mi)</h2>
+    <input class="mi" type="text" id="uimi" class="floatLabel" name="mi" value="5.0">
+
+    <h2>Slope Angle </h2>
+    <input class="beta" type="text" id="uibeta" class="floatLabel" name="beta" value="45.0">
+
+    <h2>Earthquake Coefficient (kh)</h2>
+    <input class="kh" type="text" id="uikh" class="floatLabel" name="kh" value="0.1">
+    </div>
+
+    <div>
+
+            <button class="submit" onclick="onClickedStabilityNumber()" type="button">Stability Number</button>
+            <div id="uiStabilityNumber" class="result">      <h2></h2> </div>
+
+    </div>
+</body>
+</html>
